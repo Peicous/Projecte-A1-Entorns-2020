@@ -129,7 +129,7 @@
             // 
             // txtResultat
             // 
-            this.txtResultat.Location = new System.Drawing.Point(154, 265);
+            this.txtResultat.Location = new System.Drawing.Point(180, 289);
             this.txtResultat.Name = "txtResultat";
             this.txtResultat.ReadOnly = true;
             this.txtResultat.Size = new System.Drawing.Size(116, 23);
