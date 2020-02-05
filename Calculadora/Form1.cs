@@ -141,5 +141,10 @@ namespace Calculadora
                 txtResultat.Text = resultat.ToString();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
