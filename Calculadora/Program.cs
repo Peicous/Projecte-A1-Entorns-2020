@@ -11,6 +11,7 @@ namespace Calculadora
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        /// //pepe
         [STAThread]
         static void Main()
         {
