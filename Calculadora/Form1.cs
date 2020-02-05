@@ -120,7 +120,7 @@ namespace Calculadora
                 for (seq = 0; seq <= nombre1; seq += nombre2)
                 {
                     txtResultat.Text = txtResultat.Text + "," + seq.ToString();
-                }
+                }PEPE
                 */
             }
         }
