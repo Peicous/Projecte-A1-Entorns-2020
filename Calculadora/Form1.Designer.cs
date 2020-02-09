@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculadora));
-            this.lblNombre1 = new System.Windows.Forms.Label();
-            this.lblNombre2 = new System.Windows.Forms.Label();
             this.txtNombre1 = new System.Windows.Forms.TextBox();
             this.txtNombre2 = new System.Windows.Forms.TextBox();
             this.btnSuma = new System.Windows.Forms.Button();
@@ -38,7 +36,6 @@
             this.btnMultiplicacio = new System.Windows.Forms.Button();
             this.btnDivisio = new System.Windows.Forms.Button();
             this.txtResultat = new System.Windows.Forms.TextBox();
-            this.lblResultat = new System.Windows.Forms.Label();
             this.btnResidu = new System.Windows.Forms.Button();
             this.btnSeq = new System.Windows.Forms.Button();
             this.btnPotencia = new System.Windows.Forms.Button();
@@ -55,42 +52,19 @@
             this.btn0 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblNombre1
-            // 
-            this.lblNombre1.AutoSize = true;
-            this.lblNombre1.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNombre1.Location = new System.Drawing.Point(29, 37);
-            this.lblNombre1.Name = "lblNombre1";
-            this.lblNombre1.Size = new System.Drawing.Size(119, 29);
-            this.lblNombre1.TabIndex = 0;
-            this.lblNombre1.Text = "Nombre 1:";
-            this.lblNombre1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblNombre2
-            // 
-            this.lblNombre2.AutoSize = true;
-            this.lblNombre2.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre2.Location = new System.Drawing.Point(29, 77);
-            this.lblNombre2.Name = "lblNombre2";
-            this.lblNombre2.Size = new System.Drawing.Size(119, 29);
-            this.lblNombre2.TabIndex = 1;
-            this.lblNombre2.Text = "Nombre 2:";
-            this.lblNombre2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // txtNombre1
             // 
-            this.txtNombre1.Location = new System.Drawing.Point(154, 37);
+            this.txtNombre1.Location = new System.Drawing.Point(154, 12);
             this.txtNombre1.Name = "txtNombre1";
-            this.txtNombre1.Size = new System.Drawing.Size(116, 27);
+            this.txtNombre1.Size = new System.Drawing.Size(116, 23);
             this.txtNombre1.TabIndex = 2;
             this.txtNombre1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNombre2
             // 
-            this.txtNombre2.Location = new System.Drawing.Point(154, 77);
+            this.txtNombre2.Location = new System.Drawing.Point(154, 352);
             this.txtNombre2.Name = "txtNombre2";
-            this.txtNombre2.Size = new System.Drawing.Size(116, 27);
+            this.txtNombre2.Size = new System.Drawing.Size(116, 23);
             this.txtNombre2.TabIndex = 3;
             this.txtNombre2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -140,25 +114,14 @@
             // 
             // txtResultat
             // 
-            this.txtResultat.Location = new System.Drawing.Point(154, 348);
+            this.txtResultat.Location = new System.Drawing.Point(154, 323);
             this.txtResultat.Name = "txtResultat";
             this.txtResultat.ReadOnly = true;
-            this.txtResultat.Size = new System.Drawing.Size(116, 27);
+            this.txtResultat.Size = new System.Drawing.Size(116, 23);
             this.txtResultat.TabIndex = 9;
             this.txtResultat.TabStop = false;
             this.txtResultat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtResultat.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // lblResultat
-            // 
-            this.lblResultat.AutoSize = true;
-            this.lblResultat.Font = new System.Drawing.Font("Comic Sans MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultat.Location = new System.Drawing.Point(48, 348);
-            this.lblResultat.Name = "lblResultat";
-            this.lblResultat.Size = new System.Drawing.Size(100, 29);
-            this.lblResultat.TabIndex = 8;
-            this.lblResultat.Text = "Resultat:";
-            this.lblResultat.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnResidu
             // 
@@ -174,7 +137,7 @@
             // btnSeq
             // 
             this.btnSeq.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeq.Location = new System.Drawing.Point(30, 190);
+            this.btnSeq.Location = new System.Drawing.Point(30, 127);
             this.btnSeq.Name = "btnSeq";
             this.btnSeq.Size = new System.Drawing.Size(93, 46);
             this.btnSeq.TabIndex = 11;
@@ -207,7 +170,7 @@
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(154, 129);
+            this.btn7.Location = new System.Drawing.Point(154, 66);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(47, 46);
             this.btn7.TabIndex = 14;
@@ -218,7 +181,7 @@
             // btn8
             // 
             this.btn8.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(207, 129);
+            this.btn8.Location = new System.Drawing.Point(207, 66);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(47, 46);
             this.btn8.TabIndex = 15;
@@ -228,7 +191,7 @@
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(260, 129);
+            this.btn9.Location = new System.Drawing.Point(260, 66);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(47, 46);
             this.btn9.TabIndex = 16;
@@ -238,7 +201,7 @@
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(260, 181);
+            this.btn6.Location = new System.Drawing.Point(260, 118);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(47, 46);
             this.btn6.TabIndex = 17;
@@ -248,7 +211,7 @@
             // btn5
             // 
             this.btn5.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(207, 181);
+            this.btn5.Location = new System.Drawing.Point(207, 118);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(47, 46);
             this.btn5.TabIndex = 18;
@@ -258,7 +221,7 @@
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(154, 181);
+            this.btn4.Location = new System.Drawing.Point(154, 118);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(47, 46);
             this.btn4.TabIndex = 19;
@@ -268,7 +231,7 @@
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(154, 233);
+            this.btn1.Location = new System.Drawing.Point(154, 170);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(47, 46);
             this.btn1.TabIndex = 20;
@@ -278,7 +241,7 @@
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(207, 233);
+            this.btn2.Location = new System.Drawing.Point(207, 170);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(47, 46);
             this.btn2.TabIndex = 21;
@@ -288,7 +251,7 @@
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(260, 233);
+            this.btn3.Location = new System.Drawing.Point(260, 170);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(47, 46);
             this.btn3.TabIndex = 22;
@@ -298,7 +261,7 @@
             // btn0
             // 
             this.btn0.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(154, 285);
+            this.btn0.Location = new System.Drawing.Point(154, 222);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(153, 46);
             this.btn0.TabIndex = 23;
@@ -307,10 +270,10 @@
             // 
             // frmCalculadora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(397, 383);
+            this.ClientSize = new System.Drawing.Size(397, 386);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
@@ -326,15 +289,12 @@
             this.Controls.Add(this.btnSeq);
             this.Controls.Add(this.btnResidu);
             this.Controls.Add(this.txtResultat);
-            this.Controls.Add(this.lblResultat);
             this.Controls.Add(this.btnDivisio);
             this.Controls.Add(this.btnMultiplicacio);
             this.Controls.Add(this.btnResta);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.txtNombre2);
             this.Controls.Add(this.txtNombre1);
-            this.Controls.Add(this.lblNombre2);
-            this.Controls.Add(this.lblNombre1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -347,9 +307,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNombre1;
-        private System.Windows.Forms.Label lblNombre2;
         private System.Windows.Forms.TextBox txtNombre1;
         private System.Windows.Forms.TextBox txtNombre2;
         private System.Windows.Forms.Button btnSuma;
@@ -357,7 +314,6 @@
         private System.Windows.Forms.Button btnMultiplicacio;
         private System.Windows.Forms.Button btnDivisio;
         private System.Windows.Forms.TextBox txtResultat;
-        private System.Windows.Forms.Label lblResultat;
         private System.Windows.Forms.Button btnResidu;
         private System.Windows.Forms.Button btnSeq;
         private System.Windows.Forms.Button btnPotencia;
